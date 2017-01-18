@@ -8,6 +8,7 @@
 
 #import "CCTextField.h"
 
+IB_DESIGNABLE
 @interface RuriTextField : CCTextField
 
 #pragma mark - Public properties
@@ -16,28 +17,28 @@
  *
  *  This property applies a color to the complete placeholder string. The default value for this property is a purple color.
  */
-@property (strong, nonatomic) UIColor *placeholderColor;
+@property (strong, nonatomic) IBInspectable UIColor *placeholderColor;
 
 /**
  *  The color of the border.
  *
  *  This property applies a color to the lower edge of the control. The default value for this property is a shallow green color.
  */
-@property (strong, nonatomic) UIColor *borderColor;
+@property (strong, nonatomic) IBInspectable UIColor *borderColor;
 
 /**
  *  The color of the active border and placeholder.
  *
  *  This property applies a color to the lower edge of the control and placeholder when the text is not empty or focused. The default value for this property is a shallow green color.
  */
-@property (strong, nonatomic) UIColor *activeColor;
+@property (strong, nonatomic) IBInspectable UIColor *activeColor;
 
 /**
  *  The scale of the placeholder font.
  *
  *  This property determines the size of the placeholder label relative to the font size of the text field.
  */
-@property (nonatomic) CGFloat placeholderFontScale;
+@property (nonatomic) IBInspectable CGFloat placeholderFontScale;
 
 
 @end

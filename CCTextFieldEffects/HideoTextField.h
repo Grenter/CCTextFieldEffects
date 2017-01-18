@@ -8,6 +8,7 @@
 
 #import "CCTextField.h"
 
+IB_DESIGNABLE
 @interface HideoTextField : CCTextField
 
 #pragma mark - Public properties
@@ -17,20 +18,20 @@
  *
  *  This property applies a color to the background of the image container. The default value for this property is a purple color.
  */
-@property (strong, nonatomic) UIColor *imageContainerColor;
+@property (strong, nonatomic) IBInspectable UIColor *imageContainerColor;
 
 /**
  *  The image of the image container view.
  *
  *  This property applies a image to the image container.
  */
-@property (strong, nonatomic) UIImage *image;
+@property (strong, nonatomic) IBInspectable UIImage *image;
 
 /**
  *  The scale of the image.
  *
  *  This property determines the size of the image relative to the original size when animated. The default value for this properties is 0.7
  */
-@property (nonatomic) CGFloat imageScale;
+@property (nonatomic) IBInspectable CGFloat imageScale;
 
 @end

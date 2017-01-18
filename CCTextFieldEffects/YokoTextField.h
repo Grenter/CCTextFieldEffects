@@ -8,6 +8,7 @@
 
 #import "CCTextField.h"
 
+IB_DESIGNABLE
 @interface YokoTextField : CCTextField
 
 #pragma mark - Public properties
@@ -16,20 +17,20 @@
  *
  *  This property applies a color to the complete placeholder string. The default value for this property is a shallow gray color.
  */
-@property (strong, nonatomic) UIColor *placeholderColor;
+@property (strong, nonatomic) IBInspectable UIColor *placeholderColor;
 
 /**
  *  The view’s foreground color.
  *
  *  The default value for this property is a black color.
  */
-@property (strong, nonatomic) UIColor *foregroundColor;
+@property (strong, nonatomic) IBInspectable UIColor *foregroundColor;
 
 /**
  *  The scale of the placeholder font.
  *
  *  This property determines the size of the placeholder label relative to the font size of the text field.
  */
-@property (nonatomic) CGFloat placeholderFontScale;
+@property (nonatomic) IBInspectable CGFloat placeholderFontScale;
 
 @end

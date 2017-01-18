@@ -8,6 +8,7 @@
 
 #import "CCTextField.h"
 
+IB_DESIGNABLE
 @interface IsaoTextField : CCTextField
 
 #pragma mark - Public properties
@@ -16,20 +17,20 @@
  *
  *  This property applies a color to the lower edge of the control. The default value for this property is a white color. This value is also applied to the placeholder color.
  */
-@property (strong, nonatomic) UIColor *inactiveColor;
+@property (strong, nonatomic) IBInspectable UIColor *inactiveColor;
 
 /**
  *  The color of the border when it has content.
  *
  *  This property applies a color to the lower edge of the control. The default value for this property is a shallow red color.
  */
-@property (strong, nonatomic) UIColor *activeColor;
+@property (strong, nonatomic) IBInspectable UIColor *activeColor;
 
 /**
  *  The scale of the placeholder font.
  *
  *  This property determines the size of the placeholder label relative to the font size of the text field.
  */
-@property (nonatomic) CGFloat placeholderFontScale;
+@property (nonatomic) IBInspectable CGFloat placeholderFontScale;
 
 @end
